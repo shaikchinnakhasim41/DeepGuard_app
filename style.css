@@ -1,0 +1,331 @@
+/* ================= GLOBAL ================= */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: url("assets/red tape.png") center center / cover no-repeat fixed;
+  color: #f5f1e6;
+  overflow-x: hidden;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 48px;
+  background: transparent;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff3b3b;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f5e6d3;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff4c4c;
+}
+
+.nav-btn {
+  padding: 10px 26px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #8b0000, #ff2c2c);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+}
+
+/* ================= HERO ================= */
+.hero {
+  min-height: 100vh;
+  padding: 140px 20px 110px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 64px;
+  line-height: 1.15;
+  color: #efd617;
+}
+
+.hero-text {
+  max-width: 780px;
+  margin: 24px auto 0;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  margin-top: 42px;
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 14px 36px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #e95c59, #417bcd);
+  color: #000000;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 5 0 30px rgb(134, 2, 2);
+}
+
+/* ================= HERO STATS CLEAN VISIBILITY ================= */
+.hero-stats {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.hero-stats div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-stats h3 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #040403;
+  text-shadow:
+    0 0 2px rgb(53, 227, 206),
+    0 0 18px rgb(73, 1, 1);
+}
+
+.hero-stats p {
+  font-style: "bold";
+  font-size: 20px;
+  color: #df6767;
+  margin-top: 6px;
+  text-shadow: 0 0 8px rgb(0, 19, 63);
+}
+/* ================= FEATURES ================= */
+.features-section {
+  padding: 120px 40px;
+  text-align: center;
+}
+
+.features-title {
+  font-size: 48px;
+  color: #ff3b3b;
+}
+
+.features-subtitle {
+  max-width: 760px;
+  margin: 22px auto 70px;
+  color: #f5e6d3;
+  line-height: 1.6;
+}
+
+.features-grid {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.feature-card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 40px 30px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  backdrop-filter: blur(8px);
+}
+
+.feature-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.6);
+}
+
+.feature-card h3 {
+  color: #ff3b3b;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #f5e6d3;
+  line-height: 1.6;
+}
+
+/* ================= HOW IT WORKS ================= */
+.how-section {
+  padding: 120px 40px;
+  text-align: center;
+}
+
+.how-title {
+  font-size: 48px;
+  color: #ff3b3b;
+}
+
+.how-subtitle {
+  max-width: 760px;
+  margin: 22px auto 70px;
+  color: #f5e6d3;
+  line-height: 1.6;
+}
+
+.how-grid {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.how-card {
+  flex: 1 1 250px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 50px 30px;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  backdrop-filter: blur(8px);
+}
+
+.how-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.6);
+}
+
+.step-badge {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e42b21;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* ================= ANALYZE ================= */
+.analyze-section {
+  padding: 120px 40px 100px;
+  text-align: center;
+}
+
+.toggle-container {
+  max-width: 520px;
+  margin: 0 auto 40px;
+  display: flex;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid #a20d0d66;
+}
+
+.toggle-tab {
+  flex: 1;
+  padding: 14px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #f5e6d3;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-tab.active {
+  background: #42ceb5c3;
+  color: #000000;
+}
+
+.upload-box {
+  max-width: 760px;
+  margin: auto;
+  padding: 70px 20px;
+  border: 2px dashed rgba(255, 0, 0, 0.5);
+  border-radius: 26px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.browse-btn {
+  padding: 12px 34px;
+  border-radius: 999px;
+  border: 1px solid #ff3b3b;
+  background: transparent;
+  color: #ff3b3b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.browse-btn:hover {
+  background: rgba(255, 0, 0, 0.2);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  padding: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f5e6d3;
+}
+
+/* ================= ANIMATIONS ================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

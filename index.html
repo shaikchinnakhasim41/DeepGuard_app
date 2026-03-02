@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DeepGuard – Deepfake Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">🛡 DeepGuard</div>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#analyze">Analyze</a></li>
+    <li><a href="#how">How it Works</a></li>
+  </ul>
+  <button class="nav-btn">Get Started</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero reveal">
+  <div class="hero-badge">AI-Powered Forensic Analysis</div>
+
+  <h1 class="hero-title">
+    Detect <span class="blue">Deepfakes</span><br>
+    with <span class="orange">Forensic Precision</span>
+  </h1>
+
+  <p class="hero-text">
+    Advanced AI analysis combining multiple detection methods to identify
+    manipulated videos with explainable forensic reports.
+  </p>
+
+  <div class="hero-buttons">
+    <button class="primary-btn">Analyze Video / Image</button>
+    <button class="secondary-btn">View Demo Report</button>
+  </div>
+
+  <div class="hero-stats reveal">
+    <div>
+      <h3>99.2%</h3>
+      <p>Detection Accuracy</p>
+    </div>
+    <div>
+      <h3>6</h3>
+      <p>Analysis Methods</p>
+    </div>
+    <div>
+      <h3>&lt;30s</h3>
+      <p>Processing Time</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="features-section reveal">
+  <h2 class="features-title">
+    <span>Six-Layer</span> Detection System
+  </h2>
+
+  <p class="features-subtitle">
+    Independent forensic checks ensure reliable deepfake detection.
+  </p>
+
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="feature-icon blue">😊</div>
+      <h3>Face Analysis</h3>
+      <p>Frame-by-frame inspection of facial texture and blending artifacts.</p>
+    </div>
+
+    <div class="feature-card reveal">
+      <div class="feature-icon purple">📈</div>
+      <h3>Facial Movement</h3>
+      <p>Detects unnatural blinking and expression inconsistencies.</p>
+    </div>
+
+    <div class="feature-card reveal">
+      <div class="feature-icon pink">👄</div>
+      <h3>Lip-Audio Sync</h3>
+      <p>Compares lip movement timing with speech audio.</p>
+    </div>
+
+    <div class="feature-card reveal">
+      <div class="feature-icon red"></div>
+      <h3>Pattern Analysis</h3>
+      <p>Detects frequency-domain and pixel-level anomalies.</p>
+    </div>
+
+    <div class="feature-card reveal">
+      <div class="feature-icon orange">🧠</div>
+      <h3>Behavior Check</h3>
+      <p>Analyzes gaze, micro-expressions, and head-eye coordination.</p>
+    </div>
+
+    <div class="feature-card reveal">
+      <div class="feature-icon green">🧩</div>
+      <h3>Multi-Factor Logic</h3>
+      <p>Combines all detection layers to reduce false positives.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="how-section reveal">
+  <h2 class="how-title">
+    How <span class="orange">It Works</span>
+  </h2>
+
+  <p class="how-subtitle">
+    A simple four-step process to detect and analyze potential deepfake videos.
+  </p>
+
+  <div class="how-grid">
+    <div class="how-card reveal">
+      <div class="step-badge">1</div>
+      <div class="how-icon">⬆</div>
+      <h3>Upload Video</h3>
+      <p>Upload a suspicious video file. All major formats are supported.</p>
+    </div>
+
+    <div class="how-card reveal">
+      <div class="step-badge">2</div>
+      <div class="how-icon">⚙</div>
+      <h3>AI Processing</h3>
+      <p>Multi-layer AI models analyze video, audio, and facial behavior.</p>
+    </div>
+
+    <div class="how-card reveal">
+      <div class="step-badge">3</div>
+      <div class="how-icon">📄</div>
+      <h3>Deep Analysis</h3>
+      <p>Each frame is examined for forensic inconsistencies.</p>
+    </div>
+
+    <div class="how-card reveal">
+      <div class="step-badge">4</div>
+      <div class="how-icon">✅</div>
+      <h3>Forensic Report</h3>
+      <p>Receive a detailed, explainable, court-ready report.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ANALYZE -->
+<section id="analyze" class="analyze-section reveal">
+  <h2>Upload for <span class="blue">Analysis</span></h2>
+  <p class="analyze-subtitle">Choose image or video to begin detection.</p>
+
+  <div class="toggle-container">
+    <div class="toggle-indicator" id="toggleIndicator"></div>
+    <button id="videoBtn" class="toggle-tab">🎥 Video</button>
+    <button id="imageBtn" class="toggle-tab active">🖼️ Image</button>
+  </div>
+
+  <div class="upload-box">
+    <div class="upload-icon" id="uploadIcon">🖼️</div>
+    <h3 id="uploadTitle">Drag and drop your image here</h3>
+    <p id="uploadText">Supports JPG, PNG, WebP (max 50MB)</p>
+
+    <input type="file" id="fileInput" hidden>
+    <button id="browseBtn" class="browse-btn">Browse Files</button>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 DeepGuard – Deepfake Video Detection & Forensic Analysis
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
